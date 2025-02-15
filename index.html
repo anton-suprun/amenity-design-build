@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amenity Design Build</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- Google Font for Company Title -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #001f3f;
+      --secondary: #ffffff;
+    }
+    .bg-primary-custom { background-color: var(--primary); }
+    .text-primary-custom { color: var(--primary); }
+    .btn-primary-custom { background-color: var(--primary); color: var(--secondary); }
+    /* Custom style for the company title */
+    .company-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+  </style>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white">
+  <!-- Responsive Navbar -->
+  <div class="navbar bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
+          <li><a href="#services" class="text-primary-custom hover:bg-primary-custom hover:text-white">Services</a></li>
+          <li><a href="#portfolio" class="text-primary-custom hover:bg-primary-custom hover:text-white">Portfolio</a></li>
+          <li><a href="#about" class="text-primary-custom hover:bg-primary-custom hover:text-white">About</a></li>
+          <li><a href="#contact" class="text-primary-custom hover:bg-primary-custom hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Added ml-4 to shift the company title slightly to the right -->
+      <a class="btn btn-ghost normal-case text-xl font-bold text-primary-custom company-title ml-12 lg:ml-48" href="#">
+        Amenity Design Build
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <!-- Added ml-4 to shift the nav menu options slightly to the right -->
+      <ul class="menu menu-horizontal p-0 ml-48">
+        <li><a href="#services" class="text-primary-custom hover:bg-primary-custom hover:text-white">Services</a></li>
+        <li><a href="#portfolio" class="text-primary-custom hover:bg-primary-custom hover:text-white">Portfolio</a></li>
+        <li><a href="#about" class="text-primary-custom hover:bg-primary-custom hover:text-white">About</a></li>
+        <li><a href="#contact" class="text-primary-custom hover:bg-primary-custom hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Spacer for fixed navbar -->
+  <div class="h-16"></div>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center" style="background-image: url('./assets/main-image.jpg'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-primary-custom opacity-70"></div>
+    <div class="relative text-center text-white px-4">
+      <h1 class="text-5xl font-extrabold mb-4">Crafting Your Dream Pool</h1>
+      <p class="mb-6 text-lg max-w-xl mx-auto">At Amenity Design Build, we bring unmatched expertise in pool design, construction, and renovation to transform your indoor and outdoor experiences.</p>
+      <a href="#contact" class="btn btn-primary-custom btn-lg">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-primary-custom mb-12">Our Services</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="card bordered shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title text-primary-custom">Innovative Designs</h3>
+            <p>Create visually stunning and functionally superior pool designs tailored to your lifestyle.</p>
+          </div>
+        </div>
+        <div class="card bordered shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title text-primary-custom">Renovations & Upgrades</h3>
+            <p>Revitalize existing pools with modern updates and quality craftsmanship.</p>
+          </div>
+        </div>
+        <div class="card bordered shadow-lg">
+          <div class="card-body">
+            <h3 class="card-title text-primary-custom">Custom Water Features</h3>
+            <p>Add a touch of luxury with waterfalls, fountains, and integrated lighting designs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-primary-custom mb-12">Portfolio</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+  <div class="card shadow-xl">
+    <figure><img class="w-full h-64 object-cover" src="./assets/one.jpg" alt="Project"></figure>
+    <div class="card-body">
+      <h3 class="card-title text-primary-custom">Modern Retreat</h3>
+      <p>Sleek and sophisticated design that blends innovation with elegance.</p>
+    </div>
+  </div>
+  <div class="card shadow-xl">
+    <figure><img class="w-full h-64 object-cover" src="./assets/two.jpg" alt="Project"></figure>
+    <div class="card-body">
+      <h3 class="card-title text-primary-custom">Luxury Oasis</h3>
+      <p>Experience the epitome of relaxation with cutting-edge pool features.</p>
+    </div>
+  </div>
+  <div class="card shadow-xl">
+    <figure><img class="w-full h-64 object-cover" src="./assets/three.jpg" alt="Project"></figure>
+    <div class="card-body">
+      <h3 class="card-title text-primary-custom">Resort Style</h3>
+      <p>Transform your backyard into a resort‑like sanctuary with our bespoke solutions.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <img src="./assets/our-team.jpg" alt="Our Team" class="rounded-lg shadow-2xl">
+      </div>
+      <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+        <h2 class="text-4xl font-bold text-primary-custom mb-4">About Us</h2>
+        <p class="text-lg">With a legacy of excellence in pool construction, Amenity Design Build is committed to delivering unparalleled quality and innovative solutions. Our experienced team ensures every project is executed with precision and care, making your vision a reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-primary-custom mb-6">Get in Touch</h2>
+      <p class="mb-8 text-lg">Ready to start your project? Contact us today and let's create something extraordinary.</p>
+      <a href="mailto:info@amenitydb.com" class="btn btn-primary-custom">info@amenitydb.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer p-10 bg-primary-custom text-white">
+    <div>
+      <span class="footer-title">Company</span>
+      <a class="link link-hover" href="#">Home</a>
+      <a class="link link-hover" href="#services">Services</a>
+      <a class="link link-hover" href="#portfolio">Portfolio</a>
+      <a class="link link-hover" href="#about">About Us</a>
+      <a class="link link-hover" href="#contact">Contact</a>
+    </div>
+    <div>
+      <span class="footer-title">Legal</span>
+      <a class="link link-hover" href="#">Terms of Use</a>
+      <a class="link link-hover" href="#">Privacy Policy</a>
+    </div>
+    <div>
+      <span class="footer-title">Contact</span>
+      <a class="link link-hover" href="mailto:info@amenitydb.com">info@amenitydesignbuild.com</a>
+    </div>
+  </footer>
+</body>
+</html>
